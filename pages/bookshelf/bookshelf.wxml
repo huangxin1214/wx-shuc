@@ -1,0 +1,17 @@
+<view class="swiper-tab">
+  <view class="left  ">
+    <view class="left2 {{currentTab==0?'on':''}}" data-curren="0" bindtap="swichNav">分类</view>
+  </view>
+  <view class="right ">
+    <view class="right2  {{currentTab==1?'on':'' }}" data-curren="1" bindtap="swichNav">排行</view>
+  </view>
+</view>
+<view wx:if="{{currentTab==0}}">
+  <classification wx:if="{{male.length>0}}" list='{{male}}' title='男生'></classification>
+  <classification wx:if="{{female.length>0}}" list='{{female}}' title='女生'></classification>
+  <classification wx:if="{{press.length>0}}" list='{{press}}' title='出版'></classification>
+</view>
+<view wx:else>
+  <ranking  wx:if="{{nan.length>0}}" arr='{{nan}}' title2='男生'></ranking>
+  <ranking  wx:if="{{obj.length>0}}" arr='{{obj}}' title2='女生'></ranking>
+</view>

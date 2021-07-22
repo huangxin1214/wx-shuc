@@ -1,0 +1,48 @@
+
+.display {
+  display: flex;
+}
+
+.justify-f {
+  justify-content: flex-start;
+}
+
+.jutify-f-e {
+  justify-content: flex-end;
+}
+
+.justify-c {
+  justify-content: center;
+}
+
+.justify-s {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-c {
+  flex-direction: column;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.align-e {
+  align-items: flex-end;
+}
+
+.align-s {
+  align-items: flex-start;
+}
+
+.margin {
+  margin: 0px auto;
+}
+
+.border {
+  border: 1px red solid;
+}

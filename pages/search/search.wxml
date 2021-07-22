@@ -1,0 +1,75 @@
+<!-- 搜索框 -->
+<view class="box">
+  <view class="sear">
+    <view class="imag">
+      <image src="../../assets/search.png" wx:if="{{flag}}"></image>
+    </view>
+    <view class="vao">
+      <input type="text" placeholder="输入书名或作者名" confirm-type='search' bindinput="bindinput" bindconfirm='bindconfirm'
+        value="{{value}}" />
+    </view>
+
+    <!-- 点击清除 -->
+    <view class="gotu" bindtap="qk">
+      <image src="../../assets/out.png" wx:if="{{!flag}}"></image>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{show}}">
+  <!-- 推荐书籍 -->
+  <view class="tui">
+    <view class="lop">
+      <view class="left">大家都在搜</view>
+      <view class="right" bindtap="getHis">
+        <view>
+          <image src="../../assets/xiu-oop.png"></image>
+        </view>
+        <view class="tyb"> 换一换</view>
+      </view>
+    </view>
+    <view class="huit">
+      <view class="bnd" wx:for="{{list}}" wx:key='index' bindtap="getlim" data-item="{{item}}">
+        <view class="onta" style="background:{{arr[index]}}">{{item}}</view>
+      </view>
+    </view>
+
+
+
+  </view>
+
+  <!-- 搜索历史 -->
+  <view class="op">
+    <view class="wed">
+      <view>搜索历史</view>
+      <view class="pe">
+        <image src="../../assets/lakt.png"></image>
+        <!-- 清空历史 -->
+        <view class="tyb" bindtap="getObk">清空</view>
+      </view>
+    </view>
+  </view>
+    <!-- 历史 -->
+    <view class="agh" wx:for="{{optik}}" wx:key='index' bindtap="getitem" data-item="{{item.name}}">
+      {{item.name}}
+    </view>
+
+</view>
+
+<!-- 搜索的内容 -->
+<view wx:if="{{!show}}">
+  <view class="dayz"  wx:for="{{onto}}" wx:key='index' bindtap="getXin" data-item="{{item._id}}">
+  <view class="imge">
+    <image src="{{url+item.cover}}"></image>
+  </view>
+  <view class="tiop">
+    <view class="top">{{item.title}}</view>
+    <view class="uio">{{item.author}}</view>
+    <view class="opt">  {{item.shortIntro}}</view>
+  </view>
+</view>
+
+
+
+</view>
+

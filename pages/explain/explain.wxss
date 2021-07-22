@@ -1,0 +1,27 @@
+.box {
+  flex-direction: column;
+  border-bottom:1px #eee solid ;
+  line-height:80rpx;
+}
+.font{
+ font-size: 18px;
+ margin-left:30rpx ;
+}
+.font2 {
+  margin-left:15rpx ;
+}
+.font3 {
+  font-size: 14px;
+  color: gray;
+  line-height:60rpx;
+  text-indent:2em;
+  border-bottom:1px #eee solid ;
+}
+.font4 {
+  line-height:100rpx;
+  border-bottom:1px #eee solid ;
+}
+#fontt {
+  margin-left:15rpx ;
+
+}

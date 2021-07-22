@@ -1,0 +1,7 @@
+<view class="head">
+  {{title2}}
+</view>
+<view class="obk" wx:for="{{arr}}" wx:key='index'   bindtap="getdetails"   data-item="{{item}}"  >
+   <view class="omg"> <image src="{{url+item.cover}}"></image></view> 
+    {{item.title}}
+</view>

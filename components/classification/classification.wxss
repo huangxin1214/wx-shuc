@@ -1,0 +1,31 @@
+.head {
+  width: 100%;
+  height: 100rpx;
+  color: gray;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.obj {
+  height: 150rpx;
+  width: 245rpx;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px #eee solid;
+}
+.obk {
+  margin-bottom:15rpx ;
+}
+.font {
+  color: gray;
+  font-size: 12px;
+}

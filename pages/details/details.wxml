@@ -1,0 +1,99 @@
+<view class="head"></view>
+<!-- 开始阅读 -->
+<view class="box">
+  <view class="oio">
+    <image src="{{url+list.cover}}" wx:if="{{list.cover}}" bindtap="tyud"></image>
+  </view>
+  <view class="title">{{list.title}}</view>
+  <view class="titl">{{list.author}}</view>
+  <view class="butto">
+    <view class="left">开始阅读</view>
+    <view class="right" bindtap="setHist" wx:if="{{flag}}">加入书架</view>
+    <view class="right" wx:if="{{!flag}}">已加入书架</view>
+  </view>
+</view>
+<!-- 星星 -->
+<view class="star">
+  <view class="opr">
+    <view class="starr" wx:for="{{arr}}" wx:key='index'>
+      <image src='../../assets/star-acv.png'></image>
+    </view>
+    <view class="starr" wx:for="{{5-arr}}" wx:key='index'>
+      <image src='../../assets/star.png'></image>
+    </view>
+
+  </view>
+  <view class="ony">
+    更新至 <view class="opp">{{list.lastChapter}}</view>
+  </view>
+</view>
+
+<!-- 详情  评论 -->
+<view class="bot">
+  <view class="oin">
+    <view class="uup">
+      <view class="font {{obj==0?'on':''}}" bindtap="setOin" data-index='0'> 详情</view>
+    </view>
+    <view class="uup2">
+      <view class="font {{obj==1?'on':''}}" bindtap="setOin" data-index='1'> <view class="oih">评论({{opt}})</view></view>
+    </view>
+  </view>
+</view>
+
+<scroll-view scroll-y="true" style="height:400px">
+  <!-- 详情 -->
+  <view class="aaa" wx:if="{{obj==0}}">
+    <view class="conte">
+      简介: {{list.longIntro}}
+    </view>
+    <view class="genx">
+      <view class="opl">
+        <image src="../../assets/count.png"></image>
+      </view>
+      总目录:({{list.chaptersCount}})章
+    </view>
+    <!-- 推荐的书籍 -->
+    <view class="tui">
+      <view class="up">
+        <view>看过这本书的人还在看</view>
+        <view class="iutr" bindtap="optt">
+          <image src="../../assets/xiu-oop.png"></image>
+          换一换
+        </view>
+      </view>
+      <view class="bottom">
+      <!-- 循环的书籍 -->
+        <view class="vb" wx:for="{{hovr}}" wx:key='index' bindtap="getXin" data-item="{{item._id}}">
+          <view class="tt">
+            <image src="{{url+item.cover}}" wx:if="{{item.cover}}"></image>
+          </view>
+          <view class='oom'> {{item.title}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 评价 -->
+  <view wx:else>
+  <!-- 循环评论 -->
+    <view class="pin" wx:for="{{list3}}" wx:key='index'>
+      <view class="phop">
+        <image src="{{url+item.author.avatar}}"></image>
+      </view>
+      <view class="opt">
+          <view class="popix">{{item.author.nickname}}</view>
+          <view class="popiq">{{item.content}}</view>
+      </view>
+
+    </view>
+
+  
+  
+  </view>
+</scroll-view>
+
+<!-- 遮罩 -->
+  <view class="zhk" wx:if="{{!flag1}}" bindtap="getCun">
+    <image src="{{url+list.cover}}" wx:if="{{list.cover}}" bindlongpress="setCok"  data-url="{{url+list.cover}}"></image>
+  </view>
+
+

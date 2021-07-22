@@ -1,0 +1,287 @@
+.head {
+  width: 100%;
+  height: 150rpx;
+  background: #cb1c36;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px #eee solid;
+  height: 450rpx;
+}
+
+.oio {
+  width: 300rpx;
+  height: 400rpx;
+  position: absolute;
+  top: -10rpx;
+}
+
+.oio image {
+  width: 300rpx;
+  height: 400rpx;
+}
+
+.title {
+  margin-top: 250rpx;
+}
+
+.titl {
+  font-size: 14px;
+  color: gray;
+}
+
+.butto {
+  display: flex;
+  width: 600rpx;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 50rpx;
+}
+
+.left {
+  background: #ec304c;
+  width: 260rpx;
+  height: 80rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40rpx;
+}
+
+.right {
+  border: 1px #eee solid;
+  width: 260rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40rpx;
+}
+
+.star {
+  height: 180rpx;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.opr {
+  display: flex;
+}
+
+.starr {
+  height: 50rpx;
+  width: 50rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.starr image {
+  height: 45rpx;
+  width: 45rpx;
+}
+
+.ony {
+  display: flex;
+  font-size: 14px;
+}
+
+.opp {
+  color: skyblue;
+}
+
+.bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.oin {
+  height: 100rpx;
+  width: 95%;
+  border-bottom: 1px #eee solid;
+  display: flex;
+}
+
+.uup {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.oih {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.font {
+  height: 100rpx;
+  width: 200rpx;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.uup2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.on {
+  border-bottom: 1px red solid;
+  color: red;
+}
+
+.aaa {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.conte {
+  width: 95%;
+  height: 400rpx;
+  font-size: 14px;
+  line-height: 50rpx;
+}
+
+.genx {
+  width: 95%;
+  display: flex;
+  color: gray;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+  height: 100rpx;
+}
+
+.opl {
+  width: 50rpx;
+  height: 50rpx;
+  display: flex;
+  margin-top: 5rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.opl image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.tui {
+  width: 95%;
+  margin-top: 20rpx;
+}
+
+.up {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.iutr {
+  display: flex;
+  align-items: center;
+  color: #ffb7aa;
+}
+
+.iutr image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vb {
+  width: 400rpx;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+}
+
+.tt {
+  width: 210rpx;
+  height: 300rpx;
+}
+
+.tt image {
+  width: 210rpx;
+  height: 300rpx;
+}
+
+.oom {
+  font-size: 12px;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pin {
+  width: 100%;
+  border: 1px #eee solid;
+  display: flex;
+  align-items: center;
+}
+.phop {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50px;
+}
+.phop image {
+  width: 110rpx;
+  border-radius: 50px;
+  height: 110rpx;
+}
+.opt {
+  display: flex;
+  flex-direction: column;
+  margin-left:20rpx ;
+  
+}
+.popix {
+  margin-top:15rpx ;
+  color: #ff6347;
+  font-size: 14px;
+}
+.popiq {
+  margin-top:15rpx ;
+  font-size: 13px;
+  color: #666666;
+}
+.zhk {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0, 0.4);
+}
+.zhk image {
+  width: 400rpx;
+  height: 800rpx;
+  margin:200rpx  200rpx 100rpx 180rpx;
+}

@@ -1,0 +1,33 @@
+<view class="head " >
+  <view class="left" >
+      <image src="../../assets/gai.png" wx:if="{{flag}}" bindtap="getImk"></image>
+      <image src="../../assets/gou.png" wx:if="{{!flag}}" bindtap="getImk2"></image>
+  </view>
+  <view class='help' bindtap='getHelp' >
+    帮助
+  </view>
+  <view class='xiu'>
+      <image src="../../assets/xiu.png"></image>
+  </view>
+</view>
+
+
+
+<view class="box">
+  <view class="onp" wx:for="{{list}}" wx:key='index' bindtap="getXin" data-item="{{item._id}}">
+    <view class="top">
+      <image class="ooo {{flag==false?'op':''}}" src='{{url+item.cover}}' wx:if="{{item.cover}}"></image>
+    </view>
+    <view style="font-size:14px;">
+      {{item.title}}
+    </view>
+    <view style="font-size:12px; color:gray;">
+     更新至: {{item.lastChapter}}
+    </view>
+    <view class="qy" wx:if="{{!flag}}" catchtap='gioKp' data-item="{{item._id}}">
+      <image src="../../assets/out.png"></image>
+    </view>
+
+  </view>
+
+</view>

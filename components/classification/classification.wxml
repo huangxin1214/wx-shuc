@@ -1,0 +1,11 @@
+<view>
+  <view class="head">
+    {{title}}
+  </view>
+  <view class="box">
+    <view class="obj" wx:for="{{list}}" wx:key='index' bindtap="getWed"  data-item="{{item}}">
+      <view class="obk">{{item.name}}</view>
+      <view class="font">{{item.bookCount}}本</view>
+    </view>
+  </view>
+</view>

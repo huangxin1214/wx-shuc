@@ -1,0 +1,39 @@
+<view class="box" wx:if="{{monthRank}}">
+  <view class="obj">
+    <view class="left {{opyi==0?'on':''}}" bindtap="setid" data-obj="0" data-id="{{_id}}">周榜</view>
+    <view class="left {{opyi==1?'on':''}}" bindtap="setid" data-obj="1" data-id="{{monthRank}}">月榜</view>
+    <view class="left {{opyi==2?'on':''}}" bindtap="setid" data-obj="2" data-id="{{totalRank}}">总榜</view>
+  </view>
+</view>
+
+
+<view class="dayz" wx:if="{{opyi==0}}" wx:for="{{list}}" wx:key='index' bindtap="getXin" data-item="{{item._id}}">
+  <view class="imge">
+    <image src="{{url+item.cover}}"></image>
+  </view>
+  <view class="tiop">
+    <view class="top">{{item.title}}</view>
+    <view class="uio">{{item.author}}</view>
+    <view class="opt">  {{item.shortIntro}}</view>
+  </view>
+</view>
+<view class="dayz" wx:if="{{opyi==1}}" wx:for="{{list}}" wx:key='index'>
+  <view class="imge">
+    <image src="{{url+item.cover}}"></image>
+  </view>
+  <view class="tiop">
+    <view class="top">{{item.title}}</view>
+    <view class="uio">{{item.author}}</view>
+    <view class="opt">  {{item.shortIntro}}</view>
+  </view>
+</view>
+<view class="dayz" wx:if="{{opyi==2}}" wx:for="{{list}}" wx:key='index'>
+  <view class="imge">
+    <image src="{{url+item.cover}}"></image>
+  </view>
+  <view class="tiop">
+    <view class="top">{{item.title}}</view>
+    <view class="uio">{{item.author}}</view>
+    <view class="opt">  {{item.shortIntro}}</view>
+  </view>
+</view>

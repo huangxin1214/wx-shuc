@@ -1,0 +1,41 @@
+<view class="hbkpp">
+  <!-- 一级 -->
+<view class="poti">
+  <view class="obk " wx:for="{{typeList}}" wx:key='index'>
+    <view class="oon {{optin===index?'on':''}}" bindtap="opt" data-index="{{index}}">{{item.name}}</view>
+  </view>
+</view>
+<!-- 二级 -->
+<view class="ter">
+  <scroll-view scroll-x="true" bindscroll="scroll" class="scroll">
+    <view class="erji">
+      <view class="bhu" wx:for="{{oll}}" wx:key='index'>
+        <view class="oonm {{ooo===index?'on':''}}" bindtap="opte" data-index="{{index}}" data-item='{{item}}'>{{item}}
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+</view>
+
+<view class="opik">
+<view class="dayz"  wx:for="{{list}}" wx:key='index' bindtap="getXin" data-item="{{item._id}}">
+  <view class="imge">
+    <image src="{{url+item.cover}}"></image>
+  </view>
+  <view class="tiop">
+    <view class="top">{{item.title}}</view>
+    <view class="uio">{{item.author}}</view>
+    <view class="opt">{{item.shortIntro}}</view>
+    <view class="bk">
+      <view class="bk2" wx:if="{{item.tags[0]}}">{{item.tags[0]}}</view>
+      <view class="bk3" wx:if="{{item.tags[1]}}">{{item.tags[1]}}</view>
+      <view class="bk4" wx:if="{{item.tags[2]}}">{{item.tags[2]}}</view>
+    </view>
+
+  </view>
+</view>
+</view>
+
+
+
